@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "8b3f8e20-b214-4784-8fa2-239aefa6b12e",
+		"name": "CoderByteAssessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2226931"
+	},
+	"item": [
+		{
+			"name": "https://localhost:7275/AddNewUser",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "",
+						"value": "applica",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"mohamed\",\r\n    \"lastName\":\"Samir\",\r\n    \"email\":\"moh4@yahoo.com\",\r\n    \"marketingConsent\":false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7275/AddNewUser",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7275",
+					"path": [
+						"AddNewUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:7275/get?id=Scfd070vBjYGFHLGKYn3kWGiOKM=",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDE3MzUxOTQsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyNzUiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo3Mjc1In0.m7qLWRghiVjGSCYQHutfxgRnLk6eVofZ6ARsL3_zyfI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "mohamed",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "moh@yahoo.com",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:7275/get?id=KqoVZJIjjhjhD4hRCnWPrPziyx8iXHw=",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7275",
+					"path": [
+						"get"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "KqoVZJIjjhjhD4hRCnWPrPziyx8iXHw="
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
